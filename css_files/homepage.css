@@ -150,11 +150,16 @@
     width: 130px;
     height: 40px;
     color: #f5f5f5;
-    border-radius: 2px;
+    border-radius: 5px;
     gap: 15px;
 }
+
+.input-button button:hover{
+    background-color: rgba(147, 155, 244, 1);
+}
+
 .content{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-top: 45px;
     margin-left: 155px;
     margin-right: 155px;
@@ -179,7 +184,7 @@
     position: relative;
     
 }
-#scoot-logo{
+.job-logo{
     /* border: 2px solid blue; */
     margin-left: 20px;
     position: absolute;
@@ -211,4 +216,33 @@
     /* border: 2px solid darkgreen; */
     margin-top: 15px;
     padding-left: 25px;
+    color: rgba(89, 100, 224, 1);
+}
+
+
+.load-more{
+    /* border: 2px solid darkgreen; */
+    margin-top: 45px;
+    margin-left: 655px;
+    /* margin-right: 455px; */
+    margin-bottom: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    
+}
+.load-more button{
+    background-color: rgba(89, 100, 224, 1);
+    border: none;
+    width: 130px;
+    height: 100%;
+    color: #f5f5f5;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.load-more button:hover{
+    background-color: rgba(147, 155, 244, 1);
 }
