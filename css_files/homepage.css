@@ -1,0 +1,214 @@
+:root{
+    --container-background-color: rgba(244, 246, 248, 1);
+    --main-theme-color: rgba(147, 155, 244, 1);
+    --white-color: #fff;
+}
+
+@font-face {
+    font-family: Kumbh;
+    src: url(/starter-code/assets/Kumbh_Sans/static/KumbhSans-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kumbh;
+}
+
+.container{
+    
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--container-background-color);
+    display: flex;
+    flex-direction: column;
+    font-family: Kumbh;
+}
+.header{
+    width: 100vw;
+    position: relative;
+}
+
+.top{
+   width: 100vw;
+   background-image: url(/images/headerBack.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   border-radius: 0px 0px 0px 100px;
+   display: flex;
+   height: 130px;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 150px 40px 150px;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-button{
+    width: 60px;
+    height: 25px;
+    border-radius: 30px;
+    background: var(--white-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-button > div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggle-button .active-theme{
+    background: var(--main-theme-color);
+}
+
+.search-box{
+    display: flex;
+    width: 80vw;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: var(--white-color);
+    padding: 10px;
+    height: 60px;
+    border-radius: 6px;
+    align-items: center;
+    gap: 12px;
+}
+
+.input-company{
+    width: 50%;
+    border-right: 2px solid #f5f5f5;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-company input{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    outline: none;
+    border: none;
+    color: rgba(25, 32, 45, 1);
+    font-size: 14px;
+}
+
+.input-location{
+    width: 40%;
+    border-right: 2px solid #f5f5f5;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-location input{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    outline: none;
+    border: none;
+    color: rgba(25, 32, 45, 1);
+    font-size: 14px;
+}
+.input-button{
+    width: 30%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .input-button .checkbox:checked{
+    width: 20px;
+    height: 20px;
+    accent-color: red;
+} */
+
+
+ .input-button input[type="checkbox"]:checked{
+    accent-color: rgba(89, 100, 224, 1);
+}
+
+.input-button input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.input-button button{
+    background-color: rgba(89, 100, 224, 1);
+    border: none;
+    width: 130px;
+    height: 40px;
+    color: #f5f5f5;
+    border-radius: 2px;
+    gap: 15px;
+}
+.content{
+    border: 2px solid green;
+    margin-top: 45px;
+    margin-left: 155px;
+    margin-right: 155px;
+    min-height: 78vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+}
+.parent-card{
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: 25vh;
+    width: 30%;
+
+}
+.card{
+    /* border: 2px solid rgb(255, 0, 0); */
+    margin-top: 40px;
+    height: 19.5vh;
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    
+}
+#scoot-logo{
+    /* border: 2px solid blue; */
+    margin-left: 20px;
+    position: absolute;
+    transform: translate(10%, -50%);
+
+}
+.job-content{
+    /* border: 2px solid rgb(231, 23, 203); */
+    height: 20vh;
+}
+.time-posted{
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    padding-top: 30px;
+    /* text-align: center; */
+    padding-left: 25px;
+}
+.job-type{
+    /* border: 2px solid black; */
+    margin-top: 6px;
+    padding-left: 25px;
+}
+.job-company{
+    /* border: 2px solid red; */
+    margin-top: 6.5px;
+    padding-left: 25px;
+}
+.job-location{
+    /* border: 2px solid darkgreen; */
+    margin-top: 15px;
+    padding-left: 25px;
+}
