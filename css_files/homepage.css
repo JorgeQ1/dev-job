@@ -32,7 +32,7 @@
 
 .top{
    width: 100vw;
-   background-image: url(/starter-code/assets/desktop/bg-pattern-header.svg);
+   background-image: url(/images/headerBack.svg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -62,11 +62,13 @@
 }
 
 .toggle-button > div{
+    border: 2px solid red;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     cursor: pointer;
 }
+
 .toggle-button .active-theme{
     background: var(--main-theme-color);
 }
