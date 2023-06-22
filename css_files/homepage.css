@@ -62,7 +62,7 @@
 }
 
 .toggle-button > div{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -131,7 +131,7 @@
     gap: 20px;
 }
 
- .input-button input[type="checkbox"]:checked{
+.input-button input[type="checkbox"]:checked{
     accent-color: rgba(89, 100, 224, 1);
 }
 
@@ -171,6 +171,11 @@
     width: 30%;
 
 }
+.parent-card a{
+    text-decoration: none;
+    color: black;
+}
+
 .card{
     /* border: 2px solid rgb(255, 0, 0); */
     margin-top: 40px;

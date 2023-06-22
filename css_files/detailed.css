@@ -70,6 +70,14 @@
     background: var(--main-theme-color);
 }
 
+.dark-toggler{
+    background-color: rgba(18, 23, 33, 1);
+}
+
+.dark-theme{
+    background-color: rgba(25, 32, 45, 1);
+}
+
 .header .scoot-bar{
     position: relative;
     border-radius: 6px;
