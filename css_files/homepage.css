@@ -1,7 +1,17 @@
 :root{
     --container-background-color: rgba(244, 246, 248, 1);
     --main-theme-color: rgba(147, 155, 244, 1);
-    --white-color: #fff;
+    --content-color: rgba(255, 255, 255, 1);
+    --input-search-color: rgba(25, 32, 45, 1);
+    --input-background-color: rgba(255, 255, 255, 1);
+}
+
+.dark-mode{
+    --container-background-color: rgb(6, 12, 24);
+    --main-theme-color: rgb(158, 153, 150);
+    --content-color: rgb(28, 40, 61);
+    --input-background-color: rgb(28, 40, 61);
+    --position-color: #fff;
 }
 
 @font-face {
@@ -48,13 +58,38 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 2px solid green;
 }
 
-.toggle-button{
+/* .toggle-color-switch{
+    border: 2px solid red;
+    align-items: center;
+    display: flex;
+    border-radius: 10em;
+    width: 40px;
+}
+
+#input-color-switch{
+    background: black;
+} */
+
+/* .color-toggle {
+    width: 1.6em;
+    height: 1.6em;
+    background: black;
+    position: absolute;
+    border-radius: 10em;
+    top: 0.2em;
+    left: 0.2em;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+  } */
+
+/* .toggle-button{
     width: 60px;
     height: 25px;
     border-radius: 30px;
-    background: var(--white-color);
+    background: var(--content-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -62,16 +97,15 @@
 }
 
 .toggle-button > div{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     cursor: pointer;
-}
 
 .toggle-button .active-theme{
     background: var(--main-theme-color);
-}
+} */
 
 .search-box{
     display: flex;
@@ -80,7 +114,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, 50%);
-    background: var(--white-color);
+    background: var(--content-color);
     padding: 10px;
     height: 60px;
     border-radius: 6px;
@@ -102,8 +136,9 @@
     text-align: left;
     outline: none;
     border: none;
-    color: rgba(25, 32, 45, 1);
     font-size: 14px;
+    color: var(--input-search-color);
+    background-color: var(--input-background-color);
 }
 
 .input-location{
@@ -120,8 +155,9 @@
     text-align: left;
     outline: none;
     border: none;
-    color: rgba(25, 32, 45, 1);
     font-size: 14px;
+    color: var(--input-search-color);
+    background-color: var(--input-background-color);
 }
 .input-button{
     width: 30%;
@@ -129,6 +165,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    /* accent-color: rgba(151, 151, 151, 1); */
 }
 
 .input-button input[type="checkbox"]:checked{
@@ -180,7 +217,8 @@
     /* border: 2px solid rgb(255, 0, 0); */
     margin-top: 40px;
     height: 19.5vh;
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
+    background: var(--content-color);
     position: relative;
     
 }
@@ -206,6 +244,7 @@
     /* border: 2px solid black; */
     margin-top: 6px;
     padding-left: 25px;
+    color: var(--position-color);
 }
 .job-company{
     /* border: 2px solid red; */
