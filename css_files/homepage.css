@@ -131,13 +131,6 @@
     gap: 20px;
 }
 
-/* .input-button .checkbox:checked{
-    width: 20px;
-    height: 20px;
-    accent-color: red;
-} */
-
-
  .input-button input[type="checkbox"]:checked{
     accent-color: rgba(89, 100, 224, 1);
 }
