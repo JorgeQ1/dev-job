@@ -1,7 +1,24 @@
 :root{
     --container-background-color: rgba(244, 246, 248, 1);
     --main-theme-color: rgba(147, 155, 244, 1);
-    --white-color: #fff;
+    --content-color: rgba(255, 255, 255, 1);
+    --input-search-color: rgba(25, 32, 45, 1);
+    --input-background-color: rgba(255, 255, 255, 1);
+    --toggler-background-color: rgba(255, 255, 255, 1);
+    --toggle-color: rgba(147, 155, 244, 1);
+    --text-color: rgba(25, 32, 45, 1);
+
+}
+
+.dark-mode{
+    --container-background-color: rgb(6, 12, 24);
+    --main-theme-color: rgb(158, 153, 150);
+    --content-color: rgb(28, 40, 61);
+    --input-background-color: rgb(28, 40, 61);
+    --position-color: #fff;
+    --toggler-background-color: rgba(255, 255, 255, 1);;
+    --toggle-color: rgba(147, 155, 244, 1);
+    --text-color: rgba(255, 255, 255, 1);
 }
 
 @font-face {
@@ -83,7 +100,7 @@
     border-radius: 6px;
     width: 730px;
     height: 140px;
-    background: #FFFFFF;
+    background: var(--content-color);
     margin-left: 335px;
     margin-top: -45.46px;
     display: flex;
@@ -112,6 +129,7 @@
     height: 56px;
     left: 180px;
     top: 42px;
+    color: var(--text-color);
 }
 
     /* Scoot */
@@ -174,11 +192,12 @@
     position: relative;
     width: 730px;
     height: 1257px;
-    background: #FFFFFF;
+    background: var(--content-color);
     border-radius: 6px;
     top: 32px;
     margin-left: 335px;
     min-height: 100vh;
+    /* border: 2px solid red; */
 }
 
 .software-div{
@@ -187,6 +206,7 @@
     height: 87px;
     left: 48px;
     top: 48px;
+    /* border: 2px solid blue; */
 }
 
 .senior-software{
@@ -262,7 +282,8 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
-    color: #19202D;
+    color: var(--text-color);
+    /* border: 2px solid red; */
 }
 
 .country{
@@ -332,7 +353,7 @@
     font-size: 20px;
     line-height: 25px;
     text-transform: capitalize;
-    color: #19202D;
+    color: var(--text-color);
 }
 
 /* Morbi interdum molli */
@@ -488,7 +509,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-    color: #19202D;
+    color: var(--text-color);
     text-transform: capitalize;
 }
 

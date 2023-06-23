@@ -4,6 +4,9 @@
     --content-color: rgba(255, 255, 255, 1);
     --input-search-color: rgba(25, 32, 45, 1);
     --input-background-color: rgba(255, 255, 255, 1);
+    --toggler-background-color: rgba(255, 255, 255, 1);
+    --toggle-color: rgba(147, 155, 244, 1);
+
 }
 
 .dark-mode{
@@ -12,6 +15,8 @@
     --content-color: rgb(28, 40, 61);
     --input-background-color: rgb(28, 40, 61);
     --position-color: #fff;
+    --toggler-background-color: rgba(255, 255, 255, 1);;
+    --toggle-color: rgba(147, 155, 244, 1);
 }
 
 @font-face {
@@ -58,13 +63,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 2px solid green;
 }
 .toggle-button{
     width: 60px;
     height: 25px;
     border-radius: 30px;
-    background: var(--content-color);
+    background: var(--toggler-background-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -72,7 +76,6 @@
 }
 
 .toggle-button > div{
-    border: 2px solid red;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -80,7 +83,10 @@
 }
 
 .toggle-button .active-theme{
-    background: var(--main-theme-color);
+    background: var(--toggle-color);
+}
+.toggle-button .not-active-theme{
+    background: var(--toggler-background-color);
 }
 
 .search-box{
