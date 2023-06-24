@@ -85,9 +85,9 @@
 .toggle-button .active-theme{
     background: var(--toggle-color);
 }
-.toggle-button .not-active-theme{
+/* .toggle-button .not-active-theme{
     background: var(--toggler-background-color);
-}
+} */
 
 .search-box{
     display: flex;
