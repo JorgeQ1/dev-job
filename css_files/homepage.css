@@ -6,6 +6,7 @@
     --input-background-color: rgba(255, 255, 255, 1);
     --toggler-background-color: rgba(255, 255, 255, 1);
     --toggle-color: rgba(147, 155, 244, 1);
+    --text-color: rgba(25, 32, 45, 1);
 
 }
 
@@ -17,6 +18,7 @@
     --position-color: #fff;
     --toggler-background-color: rgba(255, 255, 255, 1);;
     --toggle-color: rgba(147, 155, 244, 1);
+    --text-color: rgba(255, 255, 255, 1);
 }
 
 @font-face {
@@ -266,4 +268,167 @@
 
 .load-more button:hover{
     background-color: rgba(147, 155, 244, 1);
+}
+
+
+/* responsive for tablet screens */
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        /* flex-direction: column; */
+        background-color: aqua;
+    }
+    .top{
+        display: flex;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 150px 40px 150px;
+        gap: 100px;
+    }
+    .logo{
+        margin-left: -75px;
+    }
+
+    .toggle{
+        margin-right: -73px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .search-box{
+        display: flex;
+        width: 80vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: var(--content-color);
+        padding: 2px;
+        height: 70px;
+        border-radius: 6px;
+        align-items: center;
+        gap: 5px;
+        /* border: 2px solid red; */
+    }
+    .input-company{
+        /* border: 2px solid black; */
+        width: 30%;
+        border-right: 2px solid #f5f5f5;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .input-company img{
+        /* border: 2px solid blue; */
+        height: 3vh;
+    }
+    .input-company input{
+        /* border: 2px solid red; */
+        width: 80%;
+        height: 30px;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 12px;
+        color: var(--text-color);
+        /* color: var(--input-search-color); */
+        background-color: var(--input-background-color);
+    }
+
+    .input-location{
+        width: 30%;
+        border-right: 2px solid #f5f5f5;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .input-location img{
+        /* border: 2px solid blue; */
+        height: 3vh;
+    }
+    .input-location input{
+        /* border: 2px solid red; */
+        width: 90%;
+        height: 30px;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 12px;
+        color: var(--text-color);
+        /* color: var(--input-search-color); */
+        background-color: var(--input-background-color);
+    }
+
+    .input-button{
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-left: none;
+    }
+    /* .job-y{
+        border: 2px solid red;
+        width: 20px;
+        height: 20px;
+    } */
+
+    .input-button p{
+        text-align: justify;
+        font-size: 13px;
+        width: 40%;
+        /* border: 2px solid red; */
+        color: var(--text-color);
+    }
+
+    .input-button button{
+        /* border: 2px solid red; */
+        width: 30%;
+        height: 40px;
+        text-align: center;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        /* background-color: var(--input-background-color); */
+    }
+
+
+
+
+
+    .content{
+        display: flex;
+        margin-left: 75px;
+        margin-right: 75px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 70px;
+        min-height: 150vh;
+    }
+    .parent-card{
+        width: 49.5%;
+        min-height: 30vh;
+        /* border: 2px solid red; */
+    }
+    .card{
+        /* border: 2px solid blue; */
+        height: 24vh;
+        position: relative;
+    }
+    .load-more{
+        /* border: 2px solid darkgreen; */
+        margin-top: 30px;
+        margin-left: 325px;
+        margin-bottom: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+    }
 }
