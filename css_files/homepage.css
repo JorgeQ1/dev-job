@@ -740,7 +740,7 @@
     .container{
         display: flex;
         /* flex-direction: column; */
-        background-color: lightgreen;
+        background-color: rgb(238, 224, 144);
     }
     .top{
         display: flex;
@@ -841,6 +841,166 @@
     .input-button button{
         /* border: 2px solid red; */
         width: 50%;
+        height: 40px;
+        text-align: center;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        /* background-color: var(--input-background-color); */
+    }
+    .content{
+        display: flex;
+        margin-left: 35px;
+        margin-right: 35px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 70px;
+        min-height: 150vh;
+        /* border: 2px solid blue; */
+    }
+    .parent-card{
+        width: 110vw;
+        min-height: 35vh;
+        /* border: 2px solid red; */
+    }
+    .card{
+        /* border: 2px solid blue; */
+        height: 29vh;
+        position: relative;
+    }
+    .job-content{
+        /* border: 2px solid green; */
+        min-height: 28vh;
+    }
+    .time-posted{
+        padding-top: 50px;
+    }
+    .job-type{
+        padding-top: 10px;
+    }
+    .job-location{
+        padding-top: 10px;
+    }
+    .load-more{
+        /* border: 2px solid darkgreen; */
+        margin-top: 40px;
+        margin-left: 130px;
+        margin-bottom: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+}
+
+/* mobile with max-width screen of 320px */
+@media only screen and (max-width: 320px) {
+    .container{
+        display: flex;
+        /* flex-direction: column; */
+        background-color: rgb(163, 19, 230);
+    }
+    .top{
+        display: flex;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 150px 40px 150px;
+        gap: 10px;
+        /* border: 2px solid red; */
+        background-image: url(/images/headerBack.svg);
+        border-radius: 0px;
+    }
+    .logo{
+        margin-left: -110px;
+    }
+
+    .toggle{
+        margin-right: -110px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .search-box{
+        display: flex;
+        width: 80vw;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: var(--content-color);
+        padding: 2px;
+        height: 60px;
+        border-radius: 6px;
+        align-items: center;
+        gap: 5px;
+        /* border: 2px solid red; */
+    }
+    .input-company{
+        width: 60%;
+        padding-left: 20px;
+        border: none;
+    }
+    .input-company img{
+        /* border: 2px solid blue;
+        height: 3vh; */
+        display: none;
+    }
+    .input-company input{
+        /* border: 2px solid red; */
+        width: 80%;
+        height: 30px;
+        text-align: left;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        color: var(--text-color);
+        background-color: var(--input-background-color);
+    }
+
+    .input-location{
+        display: none;
+    }
+    .input-location img{
+        display: none;
+    }
+    .input-location input{
+        display: none;
+    }
+
+    .input-button{
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-left: none;
+        gap: 15px;
+    }
+    .input-button input{
+        display: none;
+    }   
+
+    .input-button p{
+        display: none;
+    }
+    /* filter for mobile */
+    .filter{
+        background-image: url(/starter-code/assets/mobile/icon-filter.svg);
+        width: 15px;
+        background-repeat: no-repeat;
+        height: 15px;
+        /* border: 2px solid red; */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .input-button button{
+        /* border: 2px solid red; */
+        width: 60%;
         height: 40px;
         text-align: center;
         outline: none;
