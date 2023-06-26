@@ -373,12 +373,6 @@
         gap: 13px;
         margin-left: none;
     }
-    /* .job-y{
-        border: 2px solid red;
-        width: 20px;
-        height: 20px;
-    } */
-
     .input-button p{
         text-align: justify;
         font-size: 13px;
@@ -530,12 +524,6 @@
         gap: 13px;
         margin-left: none;
     }
-    /* .job-y{
-        border: 2px solid red;
-        width: 20px;
-        height: 20px;
-    } */
-
     .input-button p{
         text-align: justify;
         font-size: 13px;
@@ -585,9 +573,6 @@
         align-items: center;
         width: 130px;
     }
-    /* .load-more button:hover{
-        background-color: rgba(147, 155, 244, 1);
-    } */
 }
 
 @media only screen and (max-width: 425px) {
@@ -633,16 +618,9 @@
         /* border: 2px solid red; */
     }
     .input-company{
-        /* border: 2px solid black;
-        width: 70%;
-        border-right: 2px solid #f5f5f5;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        gap: 3px; */
-        /* border: 2px solid greenyellow; */
         width: 70%;
         padding-left: 20px;
+        border: none;
     }
     .input-company img{
         /* border: 2px solid blue;
@@ -656,7 +634,7 @@
         text-align: left;
         outline: none;
         border: none;
-        font-size: 12px;
+        font-size: 15px;
         color: var(--text-color);
         background-color: var(--input-background-color);
     }
@@ -679,6 +657,7 @@
         align-items: center;
         gap: 13px;
         margin-left: none;
+        gap: 25px;
     }
     .input-button input{
         display: none;
@@ -690,9 +669,9 @@
     /* filter for mobile */
     .filter{
         background-image: url(/starter-code/assets/mobile/icon-filter.svg);
-        width: 20px;
+        width: 25px;
         background-repeat: no-repeat;
-        height: 20px;
+        height: 25px;
         /* border: 2px solid red; */
         background-size: cover;
         background-position: center;
