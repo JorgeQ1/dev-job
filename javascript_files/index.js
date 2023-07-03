@@ -56,3 +56,14 @@ toggler.addEventListener('click', ()=>{
 // function showTheme(){
 //     toggleTheme.innerHTML == localStorage.getItem("landing-page");
 // }
+
+
+const filter = document.getElementById('filter');
+const popUp = document.getElementById('popup');
+
+function showBox(){
+    console.log("hellooo")
+    popUp.visibility = "visible";
+    document.body.style.background = "black"
+}
+

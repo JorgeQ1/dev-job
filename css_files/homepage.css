@@ -194,6 +194,9 @@
     justify-content: space-between;
     row-gap: 3.5rem;
 }
+.popUp{
+    display: none;
+}
 .parent-card{
     /* border: 2px solid rgb(0, 0, 0); */
     height: 25vh;
@@ -1028,6 +1031,63 @@
         min-height: 150vh;
         /* border: 2px solid blue; */
     }
+    /* .popUp{
+        width: 110vw;
+        min-height: 25vh;
+        background-color: var(--content-color);
+        border-radius: 5px;
+        position: absolute;
+        z-index: 999;
+        top: 10vh;
+        left: 0;
+        visibility: hidden;
+    }    
+    .popUpLocation{
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        gap: 13px;
+        margin-top: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        display: flex;
+        border-bottom: 0.1px solid rgba(151, 151, 151, 1);
+    }
+    .popUpLocation img{
+        width: 8%;
+    }
+    .popUpLocation input{
+        border: none;
+        width: 80%;
+        height: 4vh;
+        outline: none;
+        font-size: 14px;
+        color: var(--text-color);
+        background-color: var(--input-background-color);
+    }
+    .popUpCheck{
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        padding-left: 40px;
+        display: flex;
+    }
+    .popUpCheck input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+    .popUpBtn{
+        background-color: rgba(89, 100, 224, 1);
+        margin-left: 40px;
+        margin-top: 10px;
+        width: 70%;
+        height: 5vh;
+        border-radius: 5px;
+        border-style: hidden;
+        color: #fff;
+    } */
     .parent-card{
         width: 110vw;
         min-height: 35vh;

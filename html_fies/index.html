@@ -8,7 +8,7 @@
     <title>devjobs</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="popup">
         <div class="header">
             <div class="top">
                 <div class="logo">
@@ -33,7 +33,7 @@
                     <input type="text" name="company" class="job-y" placeholder="Filter by location…">
                 </div>
                 <div class="input-button">
-                    <div class="filter"></div>
+                    <div class="filter" id="filter" onclick="showBox()"></div>
                     <div class="mobile-search"></div>
                     <input type="checkbox" name="full-time" class="job-ime"><p>Full Time</p>
                     <button type="submit">Search</button>
@@ -42,8 +42,17 @@
         </div>
         <!-- content -->
         <div class="content">
+            <div class="popUp" id="popup">
+                <div class="popUpLocation">
+                    <img src="/starter-code/assets/desktop/icon-location.svg" alt="">
+                    <input type="text" name="company" class="job-y" placeholder="Filter by location…">
+                </div>
+                <div class="popUpCheck">
+                    <input type="checkbox" name="full-time" class="job-ime"><p>Full Time</p>
+                </div>
+                <button class="popUpBtn" type="submit">Search</button>
+            </div>
             <div class="parent-card">
-
                 <a href="/html_fies/detailed.html" target="_blank">
                 <div class="card dark-theme">
                     <div class="job-logo">
