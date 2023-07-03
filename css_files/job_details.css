@@ -606,7 +606,7 @@ footer{
 	.content{
 		/* border: 2px solid red; */
 		width: 90vw;
-		margin-left: 1.5rem;
+		margin-left: 1.2rem;
 		margin-top: 15rem;
 	}
 	.job-posting{
@@ -831,7 +831,56 @@ footer{
 		display: none;
 	}
 	.footer-elements .apply-btn button {
-	width: 23rem;
-	height: 50px;
+		width: 23rem;
+		height: 50px;
+	}
 }
+
+@media only screen and (max-width: 375px) {
+	.footer-elements{
+		/* border: 2px solid red; */
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.footer-elements .apply-btn button{
+		/* border: 2px solid green; */
+		width: 21rem;
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.job-image {
+		min-width: 19vw;
+		transform: translate(190%, -200%);
+	}
+	.job-image img {
+		left: 0.6rem;
+	}
+
+	.job-company {
+		width: 35vw;
+		margin-left: 0px;
+		transform: translate(35%, -30%);
+	}
+	.job-site {
+		width: 185px;
+		height: 55px;
+		transform: translate(-65%, 90%);
+	}
+	.job-site button {
+		min-width: 140px;
+	}
+	.content{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.footer-elements{
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.footer-elements .apply-btn button{
+		width: 17.5rem;
+		height: 40px;
+	}
 }
