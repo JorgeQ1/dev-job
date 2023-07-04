@@ -7,7 +7,7 @@
     <link href="../css_files/job_details.css" rel="stylesheet"/>
     <title>devjobs</title>
 </head>
-<body>
+<body onload="loadJob()">
     <div class="container">
         <div class="header">
             <div class="top">
@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div class="job-header">
-                <div class="job-image">
-                    <img src="../starter-code/assets/logos/scoot.svg" alt="scoot">
+                <div class="job-image" id="job-image-background">
+                    <img id="job-image" src="../starter-code/assets/logos/scoot.svg" alt="scoot">
                 </div>
                 <div class="job-company">
-                    <p class="job-company-name">Scoot</p>
-                    <p class="job-company-site">Scoot.com</p>
+                    <p id="job-company" class="job-company-name">Scoot</p>
+                    <p id="job-website" class="job-company-site">Scoot.com</p>
                 </div>
                 <div class="job-site">
                     <button>Company Site</button>

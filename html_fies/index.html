@@ -7,8 +7,8 @@
     <link href="../css_files/homepage.css" rel="stylesheet"/>
     <title>devjobs</title>
 </head>
-<body>
-    <div class="container" id="popup">
+<body onload="listJobs()">
+    <div class="container">
         <div class="header">
             <div class="top">
                 <div class="logo">
@@ -41,305 +41,8 @@
             </div>
         </div>
         <!-- content -->
-        <div class="content">
-            <div class="popUp" id="popup">
-                <div class="popUpLocation">
-                    <img src="../starter-code/assets/desktop/icon-location.svg" alt="">
-                    <input type="text" name="company" class="job-y" placeholder="Filter by location…">
-                </div>
-                <div class="popUpCheck">
-                    <input type="checkbox" name="full-time" class="job-ime"><p>Full Time</p>
-                </div>
-                <button class="popUpBtn" type="submit">Search</button>
-            </div>
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/scoot.png" alt="scoot">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>5h ago <span>Full Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Software Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Scoot</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United Kingdom</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/blogr.png" alt="scoot">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>20h ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Haskell and Purescript Dev</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Blogr</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United States</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-           <div class="parent-card">
-            <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/vector.png" alt="scoot">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>1d ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Midlevel Back End Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Vector</p>
-                        </div>
-                        <div class="job-location">
-                            <p>Russia</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <!-- <img src="../starter-code/assets/logos/scoot.svg" alt=""> -->
-                        <img src="../images/office-lite.png" alt="scoot">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>2d ago <span>Full Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Senior Application Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Office-lite</p>
-                        </div>
-                        <div class="job-location">
-                            <p>Japan</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/pod.png" alt="pod">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>2d ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Midlevel Back End Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Pod</p>
-                        </div>
-                        <div class="job-location">
-                            <p>Thailand</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/creative.png" alt="creative">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>4d ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Desktop Support Manager</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Creative</p>
-                        </div>
-                        <div class="job-location">
-                            <p>Germany</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/pomodro.png" alt="pomodro">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>1w ago <span>Full Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>iOS Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Pomodro</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United States</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/maker.png" alt="maker">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>1w ago <span>Full Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Senior EJB Developer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Maker</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United Kingdom</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/coffeeroasters.png" alt="coffeeroasters">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>1w ago <span>Full Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Senior Frontend Developer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Coffeeroasters</p>
-                        </div>
-                        <div class="job-location">
-                            <p>Singapore</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/mastercraft.png" alt="mastercraft">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>2w ago <span>Freelance</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>App & Website Designer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Mastercraft</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United States</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/crowfund.png" alt="crowfund">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>1mo ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>FullStack Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Crowfund</p>
-                        </div>
-                        <div class="job-location">
-                            <p>New Zealand</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-
-            <div class="parent-card">
-                <a href="../html_fies/job_details.html" target="_blank">
-                <div class="card dark-theme">
-                    <div class="job-logo">
-                        <img src="../images/typemaster.png" alt="typemaster">
-                    </div>
-                    <div class="job-content">
-                        <div class="time-posted">
-                            <p>4d ago <span>Part Time</span></p>
-                        </div>
-                        <div class="job-type">
-                            <p><b>Technical Lead Engineer</b></p>
-                        </div>
-                        <div class="job-company">
-                            <p>Typemaster</p>
-                        </div>
-                        <div class="job-location">
-                            <p>United Kingdom</p>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
+        <div class="content" id="content">
+        
         </div>
         <footer class="footer">
             <div class="load-more">
@@ -347,6 +50,16 @@
                 <script src="../javascript_files/index.js"></script>
             </div>
         </footer>
+    </div>
+    <div class="popUp" id="popup" >
+            <div class="popUpLocation">
+                <img src="../starter-code/assets/desktop/icon-location.svg" alt="">
+                <input type="text" name="company" class="job-y" placeholder="Filter by location…">
+            </div>
+            <div class="popUpCheck">
+                <input type="checkbox" name="full-time" class="job-ime"><p>Full Time Only</p>
+            </div>
+            <button class="popUpBtn" type="submit">Search</button>
     </div>
 </body>
 </html>

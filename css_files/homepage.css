@@ -8,6 +8,8 @@
     --toggle-color: rgba(147, 155, 244, 1);
     --text-color: rgba(25, 32, 45, 1);
     --border-color: rgba(151, 151, 151, 1);
+    --p-color: rgba(110, 128, 152, 1)
+    /* --checkbox-color: rgba(151, 151, 151, 1); */
 
 }
 
@@ -21,6 +23,8 @@
     --toggle-color: rgba(147, 155, 244, 1);
     --text-color: rgba(255, 255, 255, 1);
     --border-color: rgba(110, 128, 152, 1);
+    --p-color: rgba(110, 128, 152, 1)
+
 }
 
 @font-face {
@@ -202,9 +206,7 @@
     justify-content: space-between;
     row-gap: 3.5rem;
 }
-.popUp{
-    display: none;
-}
+
 .parent-card{
     /* border: 2px solid rgb(0, 0, 0); */
     height: 25vh;
@@ -231,7 +233,15 @@
     margin-left: 20px;
     position: absolute;
     transform: translate(10%, -50%);
-
+    
+}
+.job-logo-background{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 .job-content{
     /* border: 2px solid rgb(231, 23, 203); */
@@ -243,6 +253,7 @@
     padding-top: 30px;
     /* text-align: center; */
     padding-left: 25px;
+    color: var(--p-color);
 }
 .job-type{
     /* border: 2px solid black; */
@@ -254,6 +265,7 @@
     /* border: 2px solid red; */
     margin-top: 6.5px;
     padding-left: 25px;
+    color: var(--p-color);
 }
 .job-location{
     /* border: 2px solid darkgreen; */
@@ -264,10 +276,8 @@
 
 
 .load-more{
-    /* border: 2px solid darkgreen; */
     margin-top: 45px;
     margin-left: 655px;
-    /* margin-right: 455px; */
     margin-bottom: 40px;
     height: 40px;
     display: flex;
@@ -289,15 +299,15 @@
 .load-more button:hover{
     background-color: rgba(147, 155, 244, 1);
 }
+.popUp{
+    display: none;
+}
 
 @media only screen and (max-width: 1440px) {
     .container{
         display: flex;
-        /* flex-direction: column; */
-        /* background-color: lightcoral; */
     } 
     .content{
-        /* border: 2px solid green; */
         margin-top: 50px;
         margin-left: 160px;
         margin-right: 160px;
@@ -310,7 +320,6 @@
     }
     .logo{
         margin-left: 10px;
-        /* border: 2px solid red; */
     }
     
     .toggle{
@@ -325,8 +334,6 @@
 @media only screen and (max-width: 1024px) {
     .container{
         display: flex;
-        /* flex-direction: column; */
-        /* background-color: lightcoral; */
     }
     .top{
         display: flex;
@@ -439,7 +446,6 @@
         border: none;
         font-size: 13px;
         color: var(--text-color);
-        /* background-color: var(--input-background-color); */
     }
     .content{
         display: flex;
@@ -590,7 +596,6 @@
         outline: none;
         border: none;
         font-size: 13px;
-        /* background-color: var(--input-background-color); */
     }
     .content{
         display: flex;
@@ -629,8 +634,6 @@
 @media only screen and (max-width: 425px) {
     .container{
         display: flex;
-        /* flex-direction: column; */
-        /* background-color: lightgreen; */
     }
     .top{
         display: flex;
@@ -639,7 +642,6 @@
         justify-content: space-between;
         padding: 10px 150px 40px 150px;
         gap: 10px;
-        /* border: 2px solid red; */
         background-image: url(/images/headerBack.svg);
         border-radius: 0px;
     }
@@ -738,6 +740,81 @@
     .input-button button{
         display: none;
     }
+
+    .popUp{
+        width: 81vw;
+        min-height: 30vh;
+        background-color: var(--content-color);
+        border-radius: 5px;
+        position: absolute;
+        z-index: 999;
+        top: 35vh;
+        left: 38px;
+        visibility: hidden;
+    }
+    .popUpLocation{
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        gap: 13px;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 20px;
+        display: flex;
+        border-bottom: 0.1px solid rgba(151, 151, 151, 1);
+    }
+    .popUpLocation img{
+        width: 6%;
+    }
+    .popUpLocation input{
+        border: none;
+        width: 80%;
+        height: 4vh;
+        outline: none;
+        font-size: 15px;
+        color: var(--text-color);
+        background-color: var(--input-background-color);
+    }
+    .popUpCheck{
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        padding-left: 20px;
+        margin-top: 15px;
+        display: flex;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    .popUpCheck input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+        margin-left: 0px;
+        background-color: var(--border-color);
+    }
+
+    .popUpCheck input[type="checkbox"]:checked{
+        accent-color: rgba(89, 100, 224, 1);
+    }
+    
+    .popUpBtn{
+        background-color: rgba(89, 100, 224, 1);
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 90%;
+        height: 6vh;
+        border-radius: 5px;
+        border-style: hidden;
+        color: #fff;
+        font-family: Kumbh;
+        font-size: 15px;
+        font-weight: bold;
+    } 
+    .popUpBtn:hover{
+        background-color: var(--main-theme-color);
+    }
     .content{
         display: flex;
         margin-left: 45px;
@@ -789,8 +866,6 @@
 @media only screen and (max-width: 375px) {
     .container{
         display: flex;
-        /* flex-direction: column; */
-        /* background-color: rgb(238, 224, 144); */
     }
     .top{
         display: flex;
@@ -799,7 +874,6 @@
         justify-content: space-between;
         padding: 10px 150px 40px 150px;
         gap: 10px;
-        /* border: 2px solid red; */
         background-image: url(/images/headerBack.svg);
         border-radius: 0px;
     }
@@ -835,8 +909,6 @@
         /* border: 2px solid red; */
     }
     .input-company img{
-        /* border: 2px solid blue;
-        height: 3vh; */
         display: none;
     }
     .input-company input{
@@ -846,7 +918,6 @@
         height: 30px;
         text-align: left;
         outline: none;
-        /* border: none; */
         font-size: 15px;
         color: var(--text-color);
         background-color: var(--input-background-color);
@@ -863,7 +934,6 @@
     }
 
     .input-button{
-        /* border: 2px solid black; */
         width: 40%;
         height: 60px;
         display: flex;
@@ -885,7 +955,6 @@
         width: 20px;
         background-repeat: no-repeat;
         height: 20px;
-        /* border: 2px solid red; */
         background-size: cover;
         background-position: center;
     }
@@ -897,11 +966,31 @@
         background-size: cover;
         background-position: center;
     }
-
     .input-button button{
         display: none;
     }
     
+    .popUp{
+        width: 80vw;
+        top: 35vh;
+        left: 38px;
+        visibility: hidden;
+    }
+    .popUpLocation{
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .popUpLocation img{
+        width: 7%;
+    }
+    .popUpCheck{
+        padding-left: 20px;
+    }
+    .popUpBtn{
+        margin-left: 15px;
+    } 
+
     .content{
         display: flex;
         margin-left: 35px;
@@ -953,8 +1042,6 @@
 @media only screen and (max-width: 320px) {
     .container{
         display: flex;
-        /* flex-direction: column; */
-        /* background-color: rgb(163, 19, 230); */
     }
     .top{
         display: flex;
@@ -963,7 +1050,6 @@
         justify-content: space-between;
         padding: 10px 150px 40px 150px;
         gap: 20px;
-        /* border: 2px solid red; */
         background-image: url(/images/headerBack.svg);
         border-radius: 0px;
     }
@@ -995,11 +1081,8 @@
     .input-company{
         width: 80%;
         padding-left: 20px;
-        /* border: 2px solid blue; */
     }
     .input-company img{
-        /* border: 2px solid blue;
-        height: 3vh; */
         display: none;
     }
     .input-company input{
@@ -1074,27 +1157,13 @@
         min-height: 150vh;
         /* border: 2px solid blue; */
     }
-    /* .popUp{
-        width: 110vw;
-        min-height: 25vh;
-        background-color: var(--content-color);
-        border-radius: 5px;
-        position: absolute;
-        z-index: 999;
-        top: 10vh;
-        left: 0;
+
+    .popUp{
+        /* border: 2px solid red; */
+        width: 80vw;
+        min-height: 30vh;
+        left: 30px;
         visibility: hidden;
-    }    
-    .popUpLocation{
-        width: 100%;
-        height: 8vh;
-        align-items: center;
-        gap: 13px;
-        margin-top: 5px;
-        padding: 10px;
-        padding-left: 20px;
-        display: flex;
-        border-bottom: 0.1px solid rgba(151, 151, 151, 1);
     }
     .popUpLocation img{
         width: 8%;
@@ -1104,49 +1173,35 @@
         width: 80%;
         height: 4vh;
         outline: none;
-        font-size: 14px;
+        font-size: 15px;
         color: var(--text-color);
         background-color: var(--input-background-color);
     }
     .popUpCheck{
-        width: 100%;
-        height: 8vh;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-        padding-left: 40px;
-        display: flex;
+        padding-left: 20px;
     }
     .popUpCheck input[type="checkbox"]{
-        width: 15px;
-        height: 15px;
+        width: 18px;
     }
     .popUpBtn{
-        background-color: rgba(89, 100, 224, 1);
-        margin-left: 40px;
-        margin-top: 10px;
-        width: 70%;
-        height: 5vh;
-        border-radius: 5px;
-        border-style: hidden;
-        color: #fff;
-    } */
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    } 
+
     .parent-card{
         width: 110vw;
         min-height: 35vh;
-        /* border: 2px solid red; */
     }
     .card{
-        /* border: 2px solid blue; */
         height: 29vh;
         position: relative;
     }
     .job-content{
-        /* border: 2px solid green; */
-        min-height: 28vh;
+        min-height: 29vh;
     }
     .time-posted{
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .job-type{
         padding-top: 10px;
@@ -1155,7 +1210,6 @@
         padding-top: 10px;
     }
     .load-more{
-        /* border: 2px solid darkgreen; */
         margin-top: 40px;
         margin-left: 110px;
         margin-bottom: 40px;
