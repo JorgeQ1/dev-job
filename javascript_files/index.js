@@ -544,11 +544,39 @@ function loadJob(){
             let company = document.getElementById("job-company")
             let website = document.getElementById("job-website")
             let duration = document.getElementById("week")
+            let contract = document.getElementById("time")
+            let position = document.getElementById("job-position")
+            let country = document.getElementById("country")
+            let description = document.getElementById("summary")
+            let requirements = document.getElementById("content")
+            // let required_items = document.getElementsById("content-items")
             image.setAttribute("src", card.logo)
             imageBg.style.backgroundColor = card.logoBackground
+            let role_content = document.getElementById("action-summary")
+            let foot_position = document.getElementById("foot-engineer")
+            let foot_company = document.getElementById("foot-company")
+
+            var listDiv = document.getElementById('list-items');
+            var ul = document.createElement('ul');
+            for (var i = 0; i < card.requirements.items.length; ++i) {
+                  var li = document.createElement('li');
+                  li.innerHTML = card.requirements.items[i];
+                  ul.appendChild(li);                                 
+            }
+            listDiv.appendChild(ul); 
+            
+            // linking to json data
             company.innerHTML = card.company
             website.innerHTML = card.website
             duration.innerHTML = card.postedAt
+            contract.innerHTML = card.contract
+            position.innerHTML = card.position
+            country.innerHTML = card.location
+            description.innerHTML = card.description
+            requirements.innerHTML = card.requirements.content
+            role_content.innerHTML = card.role.content
+            foot_position.innerHTML = card.position
+            foot_company.innerHTML = card.company
         }
     }
 }
