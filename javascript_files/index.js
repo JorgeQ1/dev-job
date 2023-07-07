@@ -549,7 +549,6 @@ function loadJob(){
             let country = document.getElementById("country")
             let description = document.getElementById("summary")
             let requirements = document.getElementById("content")
-            // let required_items = document.getElementsById("content-items")
             image.setAttribute("src", card.logo)
             imageBg.style.backgroundColor = card.logoBackground
             let role_content = document.getElementById("action-summary")
@@ -558,12 +557,30 @@ function loadJob(){
 
             var listDiv = document.getElementById('list-items');
             var ul = document.createElement('ul');
-            for (var i = 0; i < card.requirements.items.length; ++i) {
-                  var li = document.createElement('li');
-                  li.innerHTML = card.requirements.items[i];
-                  ul.appendChild(li);                                 
+
+            var listActionDiv = document.getElementById('list-actions');
+            var action_ul = document.createElement('ul');
+
+            function requirementItems(){
+              for (var i = 0; i < card.requirements.items.length; ++i) {
+                var li = document.createElement('li');
+                li.innerHTML = card.requirements.items[i];
+                ul.appendChild(li);                                 
+              }
+              listDiv.appendChild(ul);
+            } 
+            requirementItems();
+
+            function actionItems(){
+              for (var item = 0; item < card.role.items.length; ++item){
+                var action_li = document.createElement('li');
+                action_li.innerHTML = card.role.items[item];
+                action_ul.appendChild(action_li);
+              }
+              listActionDiv.appendChild(action_ul);
             }
-            listDiv.appendChild(ul); 
+            actionItems();
+
             
             // linking to json data
             company.innerHTML = card.company
